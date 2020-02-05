@@ -9,7 +9,13 @@ class CustomDrawer extends StatelessWidget {
       child: ListView(
         children: <Widget>[
           CustomHeader(),
+          Divider(
+            color: Colors.grey[500],
+          ),
           IconSection(),
+          Divider(
+            color: Colors.grey[500],
+          ),
         ],
       ),
     );
