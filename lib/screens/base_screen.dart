@@ -25,10 +25,11 @@ class _BaseScreenState extends State<BaseScreen> {
     if (_drawerBloc != drawerBloc) {
       _drawerBloc = drawerBloc;
 
-
       _drawerSubscription?.cancel();
       _drawerSubscription = _drawerBloc.outPage.listen((page) {
-        _pageController.jumpToPage(page);
+        try {
+          _pageController.jumpToPage(page);
+        } catch (e) {}
       });
     }
   }
@@ -38,7 +39,6 @@ class _BaseScreenState extends State<BaseScreen> {
     // TODO: implement dispose
     _drawerSubscription.cancel();
     super.dispose();
-
   }
 
   @override
@@ -47,6 +47,7 @@ class _BaseScreenState extends State<BaseScreen> {
 
     return Scaffold(
       body: PageView(
+        controller: _pageController,
         physics: const NeverScrollableScrollPhysics(),
         children: <Widget>[
           HomeScreen(),
