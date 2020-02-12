@@ -14,10 +14,20 @@ class FilterScreen extends StatefulWidget {
 class _FilterScreenState extends State<FilterScreen> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   final ScrollController _scrollController = ScrollController();
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+
+  //Filter _filter = Filter();
+
+  Filter _filter = Filter(
+      maxPrice: 100,
+      minPrice: 10,
+      vendorType: VENDOR_TYPE_PARTICULAR,
+      orderBy: OrderBy.DATE);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
       appBar: AppBar(
         elevation: 0,
         title: Text("Filtrar Buscar"),
@@ -31,14 +41,21 @@ class _FilterScreenState extends State<FilterScreen> {
               padding: const EdgeInsets.all(16),
               children: <Widget>[
                 SectionTitle("Ordenar por"),
-                OrderByField(initalValue: OrderBy.DATE, onSaved: (v) {}),
+                OrderByField(
+                    initalValue: OrderBy.DATE,
+                    onSaved: (v) {
+                      _filter.orderBy = v;
+                    }),
                 SectionTitle("Preco RS"),
-                PriceRangeField(),
+                PriceRangeField(
+                  filter: _filter,
+                ),
                 SectionTitle("Tipo de  anunciante"),
                 VendorTypeField(
-                    initalValue:
-                        VENDOR_TYPE_PROFESSIONAL | VENDOR_TYPE_PARTICULAR,
-                    onSaved: (s) {}),
+                    initalValue: _filter.vendorType,
+                    onSaved: (v) {
+                      _filter.vendorType = v;
+                    }),
               ],
             ),
           ),
@@ -46,6 +63,20 @@ class _FilterScreenState extends State<FilterScreen> {
               scrollController: _scrollController,
               onTap: () {
                 print("teste");
+                if (_formKey.currentState.validate()) {
+                  _formKey.currentState.save();
+                  if (_filter.maxPrice != null && _filter.minPrice != null) {
+                    if (_filter.minPrice > _filter.maxPrice) {
+                      _scaffoldKey.currentState.showSnackBar(
+                        SnackBar(
+                          content: const Text("Faixa de preco invalido"),
+                          backgroundColor: Colors.pink,
+                        ),
+                      );
+                      return;
+                    }
+                  }
+                }
               }),
         ],
       ),

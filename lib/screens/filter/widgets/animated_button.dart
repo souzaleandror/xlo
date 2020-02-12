@@ -2,7 +2,6 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedButton extends StatefulWidget {
-
   final ScrollController scrollController;
   final VoidCallback onTap;
 
@@ -14,7 +13,6 @@ class AnimatedButton extends StatefulWidget {
 
 class _AnimatedButtonState extends State<AnimatedButton>
     with SingleTickerProviderStateMixin {
-
   AnimationController _controller;
   Animation<EdgeInsets> _edgeAnimation;
   Animation<double> _radiusAnimation;
@@ -39,7 +37,8 @@ class _AnimatedButtonState extends State<AnimatedButton>
   }
 
   void positionChanged() {
-    if(scrollController.offset > 0.98 *  scrollController.position.maxScrollExtent) {
+    if (scrollController.offset >
+        0.98 * scrollController.position.maxScrollExtent) {
       _controller.forward();
     } else {
       _controller.reverse();
@@ -57,7 +56,7 @@ class _AnimatedButtonState extends State<AnimatedButton>
   Widget build(BuildContext context) {
     return AnimatedBuilder(
       animation: _controller,
-      builder: (_, _) {
+      builder: (_, __) {
         return Positioned(
           bottom: 0,
           right: 0,
@@ -76,7 +75,9 @@ class _AnimatedButtonState extends State<AnimatedButton>
               ),
               elevation: 0,
               onPressed: () {},
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(_radiusAnimation.value),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(_radiusAnimation.value),
+              ),
             ),
           ),
         );
