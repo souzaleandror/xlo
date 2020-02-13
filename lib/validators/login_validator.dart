@@ -12,7 +12,7 @@ class LoginValidator {
     final RegExp regex = RegExp(pattern);
 
     if (email.isEmpty) {
-      sink.add(FieldState(error: "Campo Obrigatorio"));
+      sink.add(FieldState(error: "Email Obrigatorio"));
     } else if (!regex.hasMatch(email)) {
       sink.add(FieldState(error: "Email Invalido"));
     } else {
@@ -23,7 +23,7 @@ class LoginValidator {
       StreamTransformer<String, FieldState>.fromHandlers(
           handleData: (pass, sink) {
     if (pass.isEmpty) {
-      sink.add(FieldState(error: "Campo Obrigatorio"));
+      sink.add(FieldState(error: "Senha Obrigatorio"));
     } else {
       sink.add(FieldState());
     }

@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca357d9e-1b8d-4283-8436-3e9568c5cb2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/blocs/login/field_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/blocs/login/login_bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/login/login_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/validators/login_validator.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/blocs/login/button_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/blocs/login/login_bloc_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/login/widgets/facebook_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/login/widgets/login_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/login/widgets/or_divider.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/blocs/login/login_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/blocs/login/login_bloc.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/common/custom_drawer/widgets/custom_header.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/common/custom_drawer/widgets/custom_header.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/filter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/filter.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/filter/filter_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/filter/filter_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/filter/widgets/animated_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/filter/widgets/animated_button.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/filter/widgets/price_rage_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/filter/widgets/price_rage_field.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/home/widgets/top_bar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/home/widgets/top_bar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/login/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/login/login_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/validators/login_validator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/validators/login_validator.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,44 +27,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/screens/login/login_screen.dart">
+        <entry file="file://$PROJECT_DIR$/lib/common/custom_drawer/custom_drawer.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="86" column="42" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
+            <state relative-caret-position="342">
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/blocs/login/login_bloc.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-                <element signature="e#435#499#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/validators/login_validator.dart">
+        <entry file="file://$PROJECT_DIR$/lib/common/custom_drawer/widgets/custom_header.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/blocs/login/field_state.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="110">
+              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,7 +83,6 @@
         <option value="$PROJECT_DIR$/lib/screens/home/home_screen.dart" />
         <option value="$PROJECT_DIR$/lib/screens/home/filter_screen.dart" />
         <option value="$PROJECT_DIR$/lib/screens/filter/widgets/section_title.dart" />
-        <option value="$PROJECT_DIR$/lib/screens/home/widgets/top_bar.dart" />
         <option value="$PROJECT_DIR$/lib/screens/filter/widgets/order_by_filter.dart" />
         <option value="$PROJECT_DIR$/lib/screens/filter/widgets/price_rage_filter.dart" />
         <option value="$PROJECT_DIR$/lib/screens/filter/widgets/order_by_field.dart" />
@@ -111,11 +92,17 @@
         <option value="$PROJECT_DIR$/lib/models/filter.dart" />
         <option value="$PROJECT_DIR$/lib/screens/filter/widgets/price_rage_field.dart" />
         <option value="$PROJECT_DIR$/lib/screens/filter/filter_screen.dart" />
-        <option value="$PROJECT_DIR$/lib/common/custom_drawer/widgets/custom_header.dart" />
         <option value="$PROJECT_DIR$/lib/blocs/login/field_state.dart" />
-        <option value="$PROJECT_DIR$/lib/blocs/login/login_bloc.dart" />
-        <option value="$PROJECT_DIR$/lib/screens/login/login_screen.dart" />
         <option value="$PROJECT_DIR$/lib/validators/login_validator.dart" />
+        <option value="$PROJECT_DIR$/lib/blocs/login/login_bloc_state.dart" />
+        <option value="$PROJECT_DIR$/lib/blocs/login/button_state.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/login/widgets/or_divider.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/login/login_screen.dart" />
+        <option value="$PROJECT_DIR$/lib/blocs/login/login_bloc.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/login/widgets/login_button.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/login/widgets/facebook_button.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/home/widgets/top_bar.dart" />
+        <option value="$PROJECT_DIR$/lib/common/custom_drawer/widgets/custom_header.dart" />
       </list>
     </option>
   </component>
@@ -132,6 +119,7 @@
     </navigator>
     <panes>
       <pane id="NBKnowledgePane" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -162,6 +150,27 @@
               <item name="xlo" type="b2602c69:ProjectViewProjectNode" />
               <item name="xlo" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xlo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xlo" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="custom_drawer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xlo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xlo" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="custom_drawer" type="462c0819:PsiDirectoryNode" />
+              <item name="widgets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xlo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xlo" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -175,7 +184,30 @@
               <item name="xlo" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="screens" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xlo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xlo" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="screens" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="widgets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xlo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xlo" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="screens" type="462c0819:PsiDirectoryNode" />
               <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xlo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xlo" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="screens" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="widgets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xlo" type="b2602c69:ProjectViewProjectNode" />
@@ -187,7 +219,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -242,14 +273,13 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18795888" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19089574" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="Resources Explorer" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.36305732" />
       <window_info anchor="bottom" id="Run" order="1" visible="true" weight="0.062420383" />
       <window_info anchor="bottom" id="TODO" order="2" />
@@ -259,12 +289,13 @@
       <window_info anchor="bottom" id="Flutter Performance" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.3299363" />
+      <window_info anchor="bottom" id="Find" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
-      <window_info anchor="right" id="Flutter Inspector" order="2" />
-      <window_info anchor="right" id="Flutter Outline" order="3" />
+      <window_info anchor="right" id="Flutter Inspector" order="2" weight="0.32966226" />
+      <window_info anchor="right" id="Flutter Outline" order="3" weight="0.32966226" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="JSON Utils" order="5" />
+      <window_info anchor="right" id="JSON Utils" order="5" weight="0.32966226" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -338,16 +369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/common/custom_drawer/custom_drawer.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/blocs/drawer_bloc.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -373,28 +394,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/screens/base_screen.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-            <element signature="e#990#1081#0" expanded="true" />
-            <element signature="e#1132#1647#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/screens/home/widgets/top_bar.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -516,48 +515,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/common/custom_drawer/widgets/custom_header.dart">
+    <entry file="file://$PROJECT_DIR$/lib/blocs/login/field_state.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-179">
-          <caret line="11" column="72" lean-forward="true" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
+        <state relative-caret-position="108">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/validators/login_validator.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#183#203#0" expanded="true" />
+            <element signature="e#809#829#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/blocs/login/field_state.dart">
+    <entry file="file://$PROJECT_DIR$/lib/blocs/login/button_state.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="18">
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/blocs/login/login_bloc.dart">
+    <entry file="file://$PROJECT_DIR$/lib/blocs/login/login_bloc_state.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+        <state relative-caret-position="90">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/screens/base_screen.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding>
-            <element signature="e#0#36#0" expanded="true" />
-            <element signature="e#435#499#0" expanded="true" />
+            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#990#1081#0" expanded="true" />
+            <element signature="e#1132#1647#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/screens/login/widgets/or_divider.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/screens/login/widgets/login_button.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="26" selection-start-line="26" selection-end-line="29" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/screens/login/login_screen.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="86" column="42" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
+        <state relative-caret-position="94">
+          <caret line="103" column="13" selection-start-line="103" selection-start-column="13" selection-end-line="105" selection-end-column="14" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/validators/login_validator.dart">
+    <entry file="file://$PROJECT_DIR$/lib/screens/home/widgets/top_bar.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        <state relative-caret-position="378">
+          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/screens/login/widgets/facebook_button.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/blocs/login/login_bloc.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="46" column="38" lean-forward="true" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+            <element signature="e#2153#2370#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/common/custom_drawer/custom_drawer.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/common/custom_drawer/widgets/custom_header.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

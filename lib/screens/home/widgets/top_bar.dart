@@ -23,7 +23,8 @@ class TopBar extends StatelessWidget {
                 color: Colors.white,
                 border: Border(left: BorderSide(color: Colors.blue))),
             onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => FilterScreen()));
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => FilterScreen()));
             },
           ),
         ],
