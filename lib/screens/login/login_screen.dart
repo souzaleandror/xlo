@@ -5,6 +5,7 @@ import 'package:xlo/blocs/login/login_bloc.dart';
 import 'package:xlo/screens/login/widgets/facebook_button.dart';
 import 'package:xlo/screens/login/widgets/login_button.dart';
 import 'package:xlo/screens/login/widgets/or_divider.dart';
+import 'package:xlo/screens/signup/signup_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -107,25 +108,30 @@ class _LoginScreenState extends State<LoginScreen> {
               Divider(
                 color: Colors.grey,
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 12),
-                child: Row(
-                  children: <Widget>[
-                    const Text(
-                      "Nao tem uma conta ? ",
-                      style: TextStyle(fontSize: 16),
-                    ),
-                    GestureDetector(
-                      onTap: () {},
-                      child: Text(
-                        "Cadastre-se",
-                        style: TextStyle(
-                            decoration: TextDecoration.underline,
-                            color: Colors.blue,
-                            fontSize: 16),
+              Center(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  child: Row(
+                    children: <Widget>[
+                      const Text(
+                        "Nao tem uma conta ? ",
+                        style: TextStyle(fontSize: 16),
                       ),
-                    ),
-                  ],
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => SignupScreen()));
+                        },
+                        child: Text(
+                          "Cadastre-se",
+                          style: TextStyle(
+                              decoration: TextDecoration.underline,
+                              color: Colors.blue,
+                              fontSize: 16),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
