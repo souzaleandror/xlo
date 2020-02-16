@@ -59,15 +59,43 @@ class _SignupScreenState extends State<SignupScreen> {
                 }
                 return null;
               },
+              onSaved: (text) {},
             ),
             const FieldTitle(
               title: "Senha",
               subtitle: "Use letras, numeros e caracteres especiais",
             ),
-            PasswordField(),
+            PasswordField(
+              onSaved: (text) {},
+            ),
+            Container(
+              margin: const EdgeInsets.symmetric(vertical: 24),
+              height: 50,
+              child: RaisedButton(
+                color: Colors.pink,
+                child: Text(
+                  "Cadastre-se",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600),
+                ),
+                elevation: 0,
+                disabledColor: Colors.pink.withAlpha(150),
+                onPressed: _signUp,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(25)),
+              ),
+            ),
           ],
         ),
       ),
     );
+  }
+
+  void _signUp() {
+    if (_formKey.currentState.validate()) {
+      _formKey.currentState.save();
+    }
   }
 }
