@@ -120,7 +120,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       GestureDetector(
                         onTap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => SignupScreen()));
+                              builder: (context) => SignUpScreen()));
                         },
                         child: Text(
                           "Cadastre-se",

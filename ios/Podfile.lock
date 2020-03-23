@@ -2,6 +2,8 @@ PODS:
   - connectivity (0.0.1):
     - Flutter
     - Reachability
+  - connectivity_macos (0.0.1):
+    - Flutter
   - devicelocale (0.0.1):
     - Flutter
   - Flutter (1.0.0)
@@ -12,7 +14,7 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - geolocator (5.2.1):
+  - geolocator (5.3.0):
     - Flutter
   - google_api_availability (2.0.2):
     - Flutter
@@ -36,7 +38,7 @@ PODS:
     - Mantle/extobjc (= 2.1.1)
   - Mantle/extobjc (2.1.1)
   - OneSignal (2.12.6)
-  - onesignal_flutter (2.3.3):
+  - onesignal_flutter (2.3.4):
     - Flutter
     - OneSignal (= 2.12.6)
   - package_info (0.0.1):
@@ -59,6 +61,7 @@ PODS:
 
 DEPENDENCIES:
   - connectivity (from `.symlinks/plugins/connectivity/ios`)
+  - connectivity_macos (from `.symlinks/plugins/connectivity_macos/ios`)
   - devicelocale (from `.symlinks/plugins/devicelocale/ios`)
   - Flutter (from `Flutter`)
   - flutter_image_compress (from `.symlinks/plugins/flutter_image_compress/ios`)
@@ -88,6 +91,8 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   connectivity:
     :path: ".symlinks/plugins/connectivity/ios"
+  connectivity_macos:
+    :path: ".symlinks/plugins/connectivity_macos/ios"
   devicelocale:
     :path: ".symlinks/plugins/devicelocale/ios"
   Flutter:
@@ -119,11 +124,12 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   connectivity: 6e94255659cc86dcbef1d452ad3e0491bb1b3e75
+  connectivity_macos: e2e9731b6b22dda39eb1b128f6969d574460e191
   devicelocale: feebbe5e7a30adb8c4f83185de1b50ff19b44f00
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
   flutter_image_compress: 082f8daaf6c1b0c9fe798251c750ef0ecd98d7ae
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  geolocator: a048cc412bf350b17d671d170f151b0c9fb8f098
+  geolocator: 7cdcf71180b80913b3cd84ab715d3b5365b378af
   google_api_availability: 6f1017d3a61be12be3bd9f929cc5b2606f24ae7f
   image_cropper: 3c16d7651730ffe85897f5a1c4e2547e6b54989a
   image_picker: e3eacd46b94694dde7cf2705955cece853aa1a8f
@@ -131,7 +137,7 @@ SPEC CHECKSUMS:
   location_permissions: 360d12ecd1c94a4cab68585f508be1d5ad944c8b
   Mantle: 35238ae6f2e2b2d474fa7b67fee82a59fea71915
   OneSignal: a6df91542d1cf133b9dd19d89f2b533d8f2d3163
-  onesignal_flutter: 0db2f05befedb1ef79399b571bff4c9ba5410f6a
+  onesignal_flutter: c542d9b9aa51c1fdaeeab7f1a2b372bf2f02ab67
   package_info: 48b108e75b8802c2d5e126f208ef540561c98aef
   path_provider: fb74bd0465e96b594bb3b5088ee4a4e7bb1f2a9d
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96

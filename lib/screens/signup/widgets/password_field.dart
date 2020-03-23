@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class PasswordField extends StatelessWidget {
-  PasswordField({this.onSaved});
+  PasswordField({this.onSaved, this.enabled});
+  final bool enabled;
 
   final FormFieldSetter<String> onSaved;
 
@@ -47,6 +48,7 @@ class PasswordField extends StatelessWidget {
 //                state.didChange(text);
 //              },
               onChanged: state.didChange,
+              enabled: enabled,
             ),
             if (state.value.isNotEmpty)
               Container(
