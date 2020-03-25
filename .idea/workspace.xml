@@ -2,22 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca357d9e-1b8d-4283-8436-3e9568c5cb2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/models/user.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/create/create_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/create/widgets/image_source_sheet.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/create/widgets/images_field.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/api/api_postalcode.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/blocs/cep_bloc.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/common/cep_field.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/models/address.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/repositories/api_error.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/repositories/api_response.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/xlo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xlo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/blocs/signup_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/blocs/signup_bloc.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/base_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/base_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/login/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/login/login_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/signup/signup_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/signup/signup_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/signup/widgets/password_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/signup/widgets/password_field.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/create/create_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/create/create_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/create/widgets/images_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/create/widgets/images_field.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

@@ -3,10 +3,23 @@ import 'package:flutter/material.dart';
 import 'package:xlo/screens/create/widgets/image_source_sheet.dart';
 
 class ImagesField extends StatelessWidget {
+  ImagesField({this.onSaved, this.initialValue});
+
+  final FormFieldSetter<List> onSaved;
+  final List initialValue;
+
   @override
   Widget build(BuildContext context) {
     return FormField<List>(
       initialValue: [],
+      onSaved: onSaved,
+      validator: (images) {
+        if (images.isEmpty) {
+          return "Campo Obrigatorio";
+        } else {
+          return null;
+        }
+      },
       builder: (state) {
         return Column(
           children: <Widget>[
@@ -56,7 +69,6 @@ class ImagesField extends StatelessWidget {
                       ),
                     );
                   }
-
                   return GestureDetector(
                     onTap: () {
                       showDialog(
@@ -90,7 +102,20 @@ class ImagesField extends StatelessWidget {
                   );
                 },
               ),
-            )
+            ),
+            if (state.hasError)
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 8,
+                  ),
+                  child: Text(
+                    state.errorText,
+                    style: TextStyle(color: Colors.red, fontSize: 12),
+                  ),
+                ),
+              ),
           ],
         );
       },
