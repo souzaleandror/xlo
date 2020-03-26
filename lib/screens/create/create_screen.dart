@@ -4,6 +4,8 @@ import 'package:flutter/services.dart';
 import 'package:xlo/api/api_postalcode.dart';
 import 'package:xlo/common/cep_field.dart';
 import 'package:xlo/common/custom_drawer/custom_drawer.dart';
+import 'package:xlo/models/ad.dart';
+import 'package:xlo/screens/create/widgets/hide_phone_widget.dart';
 import 'package:xlo/screens/create/widgets/images_field.dart';
 
 class CreateScreen extends StatefulWidget {
@@ -13,6 +15,8 @@ class CreateScreen extends StatefulWidget {
 
 class _CreateScreenState extends State<CreateScreen> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+
+  Ad ad = Ad();
 
   @override
   Widget build(BuildContext context) {
@@ -29,6 +33,7 @@ class _CreateScreenState extends State<CreateScreen> {
             ImagesField(
               onSaved: (images) {
                 print(images);
+                ad.images = images;
               },
             ),
             TextFormField(
@@ -45,7 +50,9 @@ class _CreateScreenState extends State<CreateScreen> {
                 if (text.isEmpty) return 'Campo obrigatorio';
                 return null;
               },
-              onSaved: (text) {},
+              onSaved: (text) {
+                ad.title = text;
+              },
             ),
             TextFormField(
               maxLength: null,
@@ -63,7 +70,9 @@ class _CreateScreenState extends State<CreateScreen> {
                 if (text.length <= 10) return 'Descricao muito curta';
                 return null;
               },
-              onSaved: (text) {},
+              onSaved: (text) {
+                ad.description = text;
+              },
             ),
             CepField(
               decoration: InputDecoration(
@@ -75,7 +84,9 @@ class _CreateScreenState extends State<CreateScreen> {
                 ),
                 contentPadding: const EdgeInsets.fromLTRB(16, 10, 12, 10),
               ),
-              onSaved: (a) {},
+              onSaved: (a) {
+                ad.address = a;
+              },
             ),
             TextFormField(
               maxLength: null,
@@ -96,11 +107,19 @@ class _CreateScreenState extends State<CreateScreen> {
               ],
               validator: (text) {
                 if (text.isEmpty) return 'Campo obrigatorio';
-                if (double.tryParse(text) == null)
+                if (double.tryParse(getSanitizedText(text)) == null)
                   return 'Utilize valores validos';
                 return null;
               },
-              onSaved: (price) {},
+              onSaved: (price) {
+                ad.price = int.parse(getSanitizedText(price)) / 100;
+              },
+            ),
+            HidePhoneWidget(
+              onSaved: (b) {
+                ad.hidePhone = b;
+              },
+              initialValue: false,
             ),
             Container(
               height: 50,
@@ -117,6 +136,7 @@ class _CreateScreenState extends State<CreateScreen> {
                   getAddressFromAPI("");
                   if (_formKey.currentState.validate()) {
                     _formKey.currentState.save();
+                    print(ad);
                   }
                 },
               ),
@@ -125,5 +145,9 @@ class _CreateScreenState extends State<CreateScreen> {
         ),
       ),
     );
+  }
+
+  String getSanitizedText(String text) {
+    return text.replaceAll(RegExp(r'[^\d]'), '');
   }
 }
