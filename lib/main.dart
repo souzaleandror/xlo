@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:xlo/blocs/drawer_bloc.dart';
-import 'package:xlo/screens/base_screen.dart';
+import 'package:xlo/screens/base/base_screen.dart';
 
 import 'blocs/home_bloc.dart';
 
@@ -24,6 +25,13 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'XLO',
         debugShowCheckedModeBanner: false,
+        localizationsDelegates: [
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate
+        ],
+        supportedLocales: [
+          Locale('pt', 'BR'),
+        ],
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),

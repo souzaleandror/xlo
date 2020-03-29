@@ -27,7 +27,7 @@ class IconSection extends StatelessWidget {
               highlighted: snapsnot.data == 0,
             ),
             IconTile(
-              label: "Inserir Anuncior",
+              label: "Inserir Anuncio",
               iconData: Icons.edit,
               onTap: () {
                 _setPage(1);
